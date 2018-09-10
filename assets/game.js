@@ -4,9 +4,9 @@ let Game = {
     init(){
         //any necessary initializations will go here,
         this._display = new ROT.Display({
-            width: window.innerWidth - (window.innerWidth / 8),
-            height : window.innerHeight - (window.innerHeight / 8)
-        })
+            width : 80, 
+            height : 24
+        });
         var game = this; //so we don't lose this
         let bindEventToScreen = (event) => {
             window.addEventListener (event, (e) => {
