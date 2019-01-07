@@ -14,6 +14,10 @@ class Tile {
         rectMode(CORNER);
     }
     boundary() {
+        let G = new Ghost
+        if( dist(this.x, this.y, G.posX, G.posY) > 25){
+            background(0);
+        }
         
     }
 }

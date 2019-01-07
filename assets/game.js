@@ -8,6 +8,7 @@ let createVector = (x,y, z) => {
 
 let horizHall1 = new horizHallway5x1(0,100);
 let vertHall1 = new vertHallway1x5(150,100)
+let G = new Ghost(25,100);
 function setup() {
     createCanvas(500,500);
 }
@@ -16,4 +17,8 @@ function draw() {
     background(100);
     horizHall1.draw();
     vertHall1.draw();
+
+    G.draw();
+    G.boundaries();
+    G.update();
 }
