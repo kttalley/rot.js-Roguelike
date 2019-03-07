@@ -21,4 +21,7 @@ function draw() {
     G.draw();
     G.boundaries();
     G.update();
+
+    Hero.draw();
+    Hero.walk();
 }

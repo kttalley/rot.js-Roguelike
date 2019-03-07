@@ -19,15 +19,16 @@ let Hero = {
         }
 
         if(key == 's' && keyIsPressed){
-            this.posY--;
+            this.posY++;
         }
     },
 
     draw: function() {
         translate(this.posX,this.posY);
-        fill(150,250,20);
-        ellipse(0,0,50,50);
+        fill(245);
+        rect(0,0,50,50);
         resetMatrix();
     },
+
 
 }
